@@ -1,0 +1,36 @@
+@import './utils/variables';
+@import './utils/buttons';
+@import './utils/base';
+@import './components/header-section';
+@import './components/top-banner';
+@import './components/about-us';
+@import './components/what-we-do';
+@import './components/our-team';
+@import './components/regular-customer';
+@import './components/footer-section';
+@import './components/social-media';
+@import './components/portfolio';
+@import './components/modal';
+@import './components/logo';
+
+.header,
+.about-us,
+.what-we-do,
+.portfolio__filter,
+.portfolio__content {
+  display: flex;
+  background-color: var(--white);
+}
+
+.nav-list .link:hover,
+.nav-list .link:focus,
+.nav-list .link--current-page,
+.header__contacts .link:hover,
+.header__contacts .link:focus,
+.footer__mail:hover,
+.footer__phone-number:hover,
+.footer__mail:focus,
+.footer__phone-number:focus {
+  color: var(--blue-theme);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}

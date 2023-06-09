@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="./css/main.min.css" rel="stylesheet">
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <a href="index.html" class="link logo-section logo-section--header">Web<span class="logo-section--header-studio">Studio</span></a>
+        <nav>
+          <ul class="nav-list list">
+            <li class="nav-list__item"><a href="index.html" class="link">Studio</a></li>
+            <li class="nav-list__item"><a href="portfolio.html" class="link link--current-page">Portfolio</a></li>
+            <li class="nav-list__item"><a href="contacts.html" class="link">Contacts</a></li>
+          </ul>
+        </nav>
+        <div class="header__contacts">
+          <a href="mailto:info@devstudio.com" class="link header__mail">
+            <svg class="mail-icon">
+              <use href="./assets/symbol-defs.svg#icon-mail"></use>
+            </svg>
+            info@devstudio.com
+          </a>
+          <a href="tel:+12127724150" class="link header__phone-number">
+            <svg class="phone-icon">
+              <use href="./assets/symbol-defs.svg#icon-phone"></use>
+            </svg>
+            +1 212-772-4150
+          </a>
+        </div>
+      </header>
+    </div>
+    <main>
+      <div class="container portfolio">
+        <!--Filter section-->
+        <div class="portfolio__filter">
+          <ul class="list portfolio__filter-list">
+            <li><button type="button" class="portfolio__filter-button">All</button></li>
+            <li><button type="button" class="portfolio__filter-button">Web-sites</button></li>
+            <li><button type="button" class="portfolio__filter-button">Apps</button></li>
+            <li><button type="button" class="portfolio__filter-button">Design</button></li>
+            <li><button type="button" class="portfolio__filter-button">Marketing</button></li>
+          </ul>
+        </div>
+        <!--Content section-->
+        <section class="portfolio__content">
+          <ul class="list portfolio__content-list">
+            <li class="portfolio__content-item">
+              <div class="portfolio__content-hover">
+                <img src="./assets/100technoduck.jpg" alt="Technoduck website" width="370" height="294">
+                <p class="portfolio__content-hover-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim incidunt ratione laboriosam, vel quia hic blanditiis facilis quo esse voluptate.</p>
+              </div>
+              <div class="portfolio__content-name">
+                <h4 class="portfolio__content-name-title">Technoduck</h4>
+                <p class="portfolio__content-name-description">Web-site</p>
+              </div>
+            </li>
+            <li class="portfolio__content-item">
+              <div class="portfolio__content-hover">
+                <img src="./assets/010poster.jpg" alt="Poster New Orlean vs Golden Star - Design" width="370" height="294">
+                <p class="portfolio__content-hover-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim incidunt ratione laboriosam, vel quia hic blanditiis facilis quo esse voluptate.</p>
+              </div>
+              <div class="portfolio__content-name">
+                <h4 class="portfolio__content-name-title">Poster New Orlean vs Golden Star</h4>
+                <p class="portfolio__content-name-description">Design</p>
+              </div>
+            </li>
+            <li class="portfolio__content-item">
+              <div class="portfolio__content-hover">
+                <img src="./assets/001seafood.jpg" alt="Seafood Restaurant App" width="370" height="294">
+                <p class="portfolio__content-hover-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim incidunt ratione laboriosam, vel quia hic blanditiis facilis quo esse voluptate.</p>
+              </div>
+              <div class="portfolio__content-name">
+                <h4 class="portfolio__content-name-title">Seafood Restaurant</h4>
+                <p class="portfolio__content-name-description">Apps</p>
+              </div>
+            </li>
+            <li class="portfolio__content-item">
+              <div class="portfolio__content-hover">
+                <img src="./assets/200pr-prime.jpg" alt="Project Prime - Marketing" width="370" height="294">
+                <p class="portfolio__content-hover-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim incidunt ratione laboriosam, vel quia hic blanditiis facilis quo esse voluptate.</p>
+              </div>
+              <div class="portfolio__content-name">
+                <h4 class="portfolio__content-name-title">Project Prime</h4>
+                <p class="portfolio__content-name-description">Marketing</p>
+              </div>
+            </li>
+            <li class="portfolio__content-item">
+              <div class="portfolio__content-hover">
+                <img src="./assets/020pr-box.jpg" alt="Project Boxes App" width="370" height="294">
+                <p class="portfolio__content-hover-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim incidunt ratione laboriosam, vel quia hic blanditiis facilis quo esse voluptate.</p>
+              </div>
+              <div class="portfolio__content-name">
+                <h4 class="portfolio__content-name-title">Project Boxes</h4>
+                <p class="portfolio__content-name-description">Apps</p>
+              </div>
+            </li>
+            <li class="portfolio__content-item">
+              <div class="portfolio__content-hover">
+                <img src="./assets/002insp.jpg" alt="Inspiration has no Borders website" width="370" height="294">
+                <p class="portfolio__content-hover-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim incidunt ratione laboriosam, vel quia hic blanditiis facilis quo esse voluptate.</p>
+              </div>
+              <div class="portfolio__content-name">
+                <h4 class="portfolio__content-name-title">Inspiration has no Borders</h4>
+                <p class="portfolio__content-name-description">Web-site</p>
+              </div>
+            </li>
+            <li class="portfolio__content-item">
+              <div class="portfolio__content-hover">
+                <img src="./assets/300limited.jpg" alt="Limited Edition - Design" width="370" height="294">
+                <p class="portfolio__content-hover-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim incidunt ratione laboriosam, vel quia hic blanditiis facilis quo esse voluptate.</p>
+              </div>
+              <div class="portfolio__content-name">
+                <h4 class="portfolio__content-name-title">Limited Edition</h4>
+                <p class="portfolio__content-name-description">Design</p>
+              </div>
+            </li>
+            <li class="portfolio__content-item">
+              <div class="portfolio__content-hover">
+                <img src="./assets/030pr-lab.jpg" alt="Project LAB - Marketing" width="370" height="294">
+                <p class="portfolio__content-hover-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim incidunt ratione laboriosam, vel quia hic blanditiis facilis quo esse voluptate.</p>
+              </div>
+              <div class="portfolio__content-name">
+                <h4 class="portfolio__content-name-title">Project LAB</h4>
+                <p class="portfolio__content-name-description">Marketing</p>
+              </div>
+            </li>
+            <li class="portfolio__content-item">
+              <div class="portfolio__content-hover">
+                <img src="./assets/003grow.jpg" alt="Growing Business App" width="370" height="294">
+                <p class="portfolio__content-hover-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim incidunt ratione laboriosam, vel quia hic blanditiis facilis quo esse voluptate.</p>
+              </div>
+              <div class="portfolio__content-name">
+                <h4 class="portfolio__content-name-title">Growing Business</h4>
+                <p class="portfolio__content-name-description">Apps</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <div class="container">
+      <footer class="footer">
+        <div class="footer__contacts">
+          <a href="index.html" class="link logo-section logo-section--footer">Web<span class="logo-section--footer-studio">Studio</span></a>
+          <address class="footer__contacts-info">
+            <p class="footer__address">695 Park Ave, NY 10065, USA</p>
+            <a href="mailto:info@devstudio.com" class="link footer__mail">info@devstudio.com<br></a>
+            <a href="tel:+12127724150" class="link footer__phone-number">+1 212-772-4150</a>
+          </address>
+        </div>
+        <div class="footer__social-media">
+          <h5 class="footer__social-media-title">Find us on</h5>
+          <div class="footer__social-media-icons">
+            <a href="https://instagram.com" class="link link--icon-social-media footer__icon-container" target="_blank" rel="nofollow noopener noreferrer">
+              <svg class="icon-social-media icon-social-media--footer">
+                <use href="./assets/symbol-defs.svg#icon-instagram"></use>
+              </svg>
+            </a>
+            <a href="https://twitter.com" class="link link--icon-social-media footer__icon-container" target="_blank" rel="nofollow noopener noreferrer">
+              <svg class="icon-social-media icon-social-media--footer">
+                <use href="./assets/symbol-defs.svg#icon-twitter"></use>
+              </svg>
+            </a>
+            <a href="https://facebook.com" class="link link--icon-social-media footer__icon-container" target="_blank" rel="nofollow noopener noreferrer">
+              <svg class="icon-social-media icon-social-media--footer">
+                <use href="./assets/symbol-defs.svg#icon-facebook"></use>
+              </svg>
+            </a>
+            <a href="https://linkedin.com" class="link link--icon-social-media footer__icon-container" target="_blank" rel="nofollow noopener noreferrer">
+              <svg class="icon-social-media icon-social-media--footer">
+                <use href="./assets/symbol-defs.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+         </div>
+        </div>
+        <div class="footer__subscribe-section">
+          <form name="subscribe" autocomplete="on" novalidate class="subscribe-form">
+            <label class="subscribe-form__label">
+              <span class="subscribe-form__title">Subscribe to the newsletter</span>
+              <input type="email" name="email" class="subscribe-form__input" placeholder="E-mail"/>
+            </label>
+            <button type="submit" class="subscribe-form__button">
+              Subscribe
+              <svg class="subscribe-form__button-icon">
+                <use href="./assets/icons.svg#icon-sub-icon"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

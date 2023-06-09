@@ -1,0 +1,117 @@
+.top-banner__button {
+    border: none;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    background-color: var(--blue-theme);
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.subscribe-form__button {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    color: var(--white);
+    background: var(--blue-theme);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    gap: 25px;
+    margin-left: 12px;
+    cursor: pointer;
+    &-icon {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.portfolio__filter-button {
+    padding: 6px 22px;
+    background: var(--whitish);
+    border-style: none;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    &:hover,
+    &:focus {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: var(--white);
+      background-color: var(--blue-theme);
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+.modal-content {
+    &__close-button {
+        position: absolute;
+        right: 8px;
+        top: 8px;
+        --r-btn: 30px;
+        width: var(--r-btn);
+        height: var(--r-btn);
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        background: var(--white);
+        cursor: pointer;
+        font-size: 25px;
+        line-height: 1px;
+        &:hover {
+            color: var(--blue-theme);
+            transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+
+    &__submit-button {
+        border: none;
+        width: 200px;
+        height: 50px;
+        margin-top: 20px;
+        align-self: center;
+        background: var(--blue-theme);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: var(--white);
+        cursor: pointer;
+    }
+}
+
+

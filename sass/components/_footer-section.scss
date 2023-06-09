@@ -1,0 +1,107 @@
+.footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 60px;
+    padding-left: 215px;
+    padding-bottom: 60px;
+    background-color: var(--grayish);
+    &__contacts {
+      display: flex;
+      flex-direction: column;
+    }
+    &__address {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.03em;
+      color: var(--white);
+    }
+    &__contacts-info {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    &__mail,
+    &__phone-number {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      height: 16px;
+      letter-spacing: 0.03em;
+      color: var(--white-60);
+    }
+    &__social-media {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-left: 110px;
+      margin-top: 15px;
+    }
+    &__social-media-title {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--white);
+    }
+    &__social-media-icons {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    &__icon-container {
+      width: 44px;
+      height: 44px;
+      background-color: var(--white-10);
+      border-radius: 50%;
+    }
+  }
+  
+  .subscribe-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-left: 93px;
+    margin-top: 15px;
+    &__label {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    &__title {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--white);
+      margin-bottom: 20px;
+    }
+    &__input {
+      width: 358px;
+      height: 50px;
+      padding-left: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+      background: var(--grayish);
+      color: var(--white);
+      outline: none;
+      &::placeholder {
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 20px;
+          letter-spacing: 0.03em;
+          color: var(--white-60);
+        }
+    }
+  }

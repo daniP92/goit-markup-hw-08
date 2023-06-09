@@ -1,0 +1,88 @@
+.portfolio {
+    border-top: 1px solid var(--container-top-border-color);
+    &__filter {
+      display: flex;
+      justify-content: center;
+      padding-top: 94px;
+      padding-bottom: 34px;
+      &-list {
+          gap: 8px;
+          padding-right: 35px;
+        }
+    }
+    &__content-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      list-style: none;
+      justify-content: space-between;
+      gap: 30px;
+      padding-left: 215px;
+      padding-bottom: 94px;
+    }
+    &__content-item {
+      background: var(--white);
+      border: 1px solid var(--white-gray);
+      &:hover,
+      &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        cursor: pointer;
+        transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+    &__content-name {
+      display: flex;
+      flex-direction: column;
+      align-content: space-around;
+      height: 110px;
+      &-title {
+          padding-top: 20px;
+          padding-left: 24px;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 36px;
+          letter-spacing: 0.06em;
+        }
+        &-description {
+          padding-left: 24px;
+          padding-top: 4px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 30px;
+          letter-spacing: 0.03em;
+          color: var(--gray);
+        }
+    }
+    &__content-hover {
+      position: relative;
+      overflow: hidden;
+      &:hover {
+        .portfolio__content-hover-description {
+            top: 0;
+        }
+      }
+      &-description {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          padding: 63px 24px 5px;
+          background-color: var(--blue-theme-90);
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 28px;
+          letter-spacing: 0.03em;
+          color: var(--white);
+          overflow: hidden;
+          transition-property: top, right, bottom, left;
+          transition-duration: 0.25s;
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          top: 100%;
+        }
+    }
+  }
