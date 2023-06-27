@@ -1,0 +1,45 @@
+.container--what-we-do {
+  display: none;
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .container--what-we-do {
+    display: flex;
+    flex-direction: column;
+  }
+  .what-we-do {
+    padding-bottom: 94px;
+    &__title {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 42px;
+      text-align: center;
+      letter-spacing: 0.03em;
+    }
+    &__list {
+      display: flex;
+      gap: 30px;
+      margin-top: 50px;
+      padding-left: 0;
+    }
+    &__item {
+      position: relative;
+    }
+    &__image-title {
+      display: flex;
+      position: absolute;
+      bottom: 0px;
+      justify-content: center;
+      align-items: center;
+      width: 370px;
+      height: 70px;
+      background-color: var(--grayish-80);
+      color: var(--white);
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+  }
+}

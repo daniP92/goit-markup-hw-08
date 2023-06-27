@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link href="./css/main.min.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link href="./css/main.min.css" rel="stylesheet" />
     <title>Studio</title>
   </head>
   <body>
     <!-- Header section -->
-    <div class="container">
-      <header class="header">
+    <header class="header">
+      <div class="container container--header">
         <a href="index.html" class="link logo-section logo-section--header">Web<span class="logo-section--header-studio">Studio</span></a>
-        <nav>
-          <ul class="nav-list list">
-            <li class="nav-list__item"><a href="index.html" class="link link--current-page">Studio</a></li>
-            <li class="nav-list__item"><a href="portfolio.html" class="link">Portfolio</a></li>
-            <li class="nav-list__item"><a href="contacts.html" class="link">Contacts</a></li>
+        <nav class="navigation">
+          <ul class="nav-list nav-list--mobile list">
+            <li class="nav-list__item">
+              <a href="index.html" class="link link--current-page">Studio</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="portfolio.html" class="link">Portfolio</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="" class="link">Contacts</a>
+            </li>
           </ul>
         </nav>
         <div class="header__contacts">
@@ -37,20 +43,70 @@
             +1 212-772-4150
           </a>
         </div>
-      </header>
-    </div>
+        <!-- Mobile Menu Button -->
+        <button class="menu-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu-button__icon-open">
+            <use href="./assets/icons.svg#icon-menu-icon"></use>
+          </svg>
+        </button>
+        <!-- Mobile Menu List -->
+        <div class="nav-mobile-menu js-menu-container" id="mobile-menu">
+          <button class="menu-button menu-button--close js-close-menu">
+            <svg class="menu-button__icon-close">
+              <use href="./assets/icons.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu list">
+            <li class="mobile-menu__item">
+              <a href="./index.html" class="mobile-menu__link mobile-menu__link--current link">Studio</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="./portfolio.html" class="mobile-menu__link link">Portfolio</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="" class="mobile-menu__link link">Contacts</a>
+            </li>
+          </ul>
+          <div class="mobile-menu-contacts">
+            <ul class="mobile-menu-contacts__list list">
+              <li class="mobile-menu-contacts__list-item">
+                <a href="tel:+12127724150" class="mobile-menu-contacts__list-link link"> +1 212 772 4150</a>
+              </li>
+              <li class="mobile-menu-contacts__list-item">
+                <a href="mailto:info@devstudio.com" class="mobile-menu-contacts__list-link mobile-menu-contacts__list-link--mail link"> info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="mobile-menu-social list">
+              <li class="mobile-menu-social__item">
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="mobile-menu-social__link link">Instagram </a>
+              </li>
+              <li class="mobile-menu-social__item">
+                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="mobile-menu-social__link link">Twitter </a>
+              </li>
+              <li class="mobile-menu-social__item">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="mobile-menu-social__link link">Facebook </a>
+              </li>
+              <li class="mobile-menu-social__item">
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="mobile-menu-social__link link">LinkedIn </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
     <main>
       <!--Main Banner section-->
-      <div class="container">
-        <section class="top-banner">
+      <section class="top-banner">
+        <div class="container container--top-banner">
           <h1 class="top-banner__title">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
           <button class="top-banner__button" type="button" data-modal-open>Request our service</button>
-        </section>
-      </div>
+        </div>
+      </section>
       <!--About us section-->
-      <div class="container">
-        <section class="about-us">
-          <ul class="list about-us__list">
+      <section class="about-us">
+        <div class="container container--about-us">
+          <ul class="about-us__list list">
             <li class="about-us__item">
               <div class="about-us__icon-container">
                 <svg class="about-us__icon">
@@ -88,35 +144,49 @@
               <p class="about-us__context">We use innovative tools to solve assigned tasks. It's time to simplify work processes.</p>
             </li>
           </ul>
-        </section>
-      </div>
-        <!--What we do section-->
-      <div class="container">
-        <section class="what-we-do">
+        </div>
+      </section>
+      <!--What we do section-->
+      <section class="what-we-do">
+        <div class="container container--what-we-do">
           <h2 class="what-we-do__title">What we do</h2>
-          <ul class="list what-we-do__list">
+          <ul class="what-we-do__list list">
             <li class="what-we-do__item">
-              <img src="./assets/img1wwd.jpg" alt="Coding.." width="370" height="294">
+              <picture>
+                <source srcset="./assets/desktop/img1wwd_desktop.jpg 1x, ./assets/desktop/img1wwd_desktop@2x.jpg 2x" media="(min-width:1200px)" />
+                <img src="./assets/desktop/img1wwd_desktop.jpg" alt="Coding.." width="370" height="294" />
+              </picture>
               <h5 class="what-we-do__image-title">desktop apps</h5>
             </li>
             <li class="what-we-do__item">
-              <img src="./assets/img2wwd.jpg" alt="Checking phone.." width="370" height="294">
+              <picture>
+                <source srcset="./assets/desktop/img2wwd_desktop.jpg 1x, ./assets/desktop/img2wwd_desktop@2x.jpg 2x" media="(min-width:1200px)" />
+                <img src="./assets/desktop/img2wwd_desktop.jpg" alt="Checking phone.." width="370" height="294" />
+              </picture>
               <h5 class="what-we-do__image-title">mobile apps</h5>
             </li>
             <li class="what-we-do__item">
-              <img src="./assets/img3wwd.jpg" alt="And sometimes our tablet :D" width="370" height="294">
+              <picture>
+                <source srcset="./assets/desktop/img3wwd_desktop.jpg 1x, ./assets/desktop/img3wwd_desktop@2x.jpg 2x" media="(min-width:1200px)" />
+                <img src="./assets/desktop/img3wwd_desktop.jpg" alt="And sometimes our tablet :D" width="370" height="294" />
+              </picture>
               <h5 class="what-we-do__image-title">design solutions</h5>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
       <!--Our team section-->
-      <div class="container">
-        <section class="our-team">
+      <section class="our-team">
+        <div class="container container--our-team">
           <h2 class="our-team__title">Our Team</h2>
-          <ul class="list our-team__list">
+          <ul class="our-team__list list">
             <li class="our-team__item">
-              <img src="./assets/img1ot.jpg" alt="Picture of Chris" width="270" height="260">
+              <picture>
+                <source srcset="./assets/desktop/img1ot_desktop.jpg 1x, ./assets/desktop/img1ot_desktop@2x.jpg 2x" media="(min-width:1200px)" />
+                <source srcset="./assets/tablet/img1ot_tablet.jpg 1x, ./assets/tablet/img1ot_tablet@2x.jpg 2x" media="(min-width:768px)" />
+                <source srcset="./assets/mobile/img1ot_mobile.jpg 1x, ./assets/mobile/img1ot_mobile@2x.jpg 2x" media="(max-width:767.98px)" />
+                <img src="./assets/mobile/img1ot_mobile.jpg" alt="Picture of Chris" />
+              </picture>
               <div class="our-team__member">
                 <h4 class="our-team__member-name">Christopher Walker</h4>
                 <p class="our-team__member-skill">Product Designer</p>
@@ -145,7 +215,12 @@
               </div>
             </li>
             <li class="our-team__item">
-              <img src="./assets/img2ot.jpg" alt="Picture of Kylie" width="270" height="260">
+              <picture>
+                <source srcset="./assets/desktop/img2ot_desktop.jpg 1x, ./assets/desktop/img2ot_desktop@2x.jpg 2x" media="(min-width:1200px)" />
+                <source srcset="./assets/tablet/img2ot_tablet.jpg 1x, ./assets/tablet/img2ot_tablet@2x.jpg 2x" media="(min-width:768px)" />
+                <source srcset="./assets/mobile/img2ot_mobile.jpg 1x, ./assets/mobile/img2ot_mobile@2x.jpg 2x" media="(max-width:767.98px)" />
+                <img src="./assets/mobile/img2ot_mobile.jpg" alt="Picture of Chris" />
+              </picture>
               <div class="our-team__member">
                 <h4 class="our-team__member-name">Kylie Evans</h4>
                 <p class="our-team__member-skill">Frontend Developer</p>
@@ -174,7 +249,12 @@
               </div>
             </li>
             <li class="our-team__item">
-              <img src="./assets/img3ot.jpg" alt="Picture of Ryan" width="270" height="260">
+              <picture>
+                <source srcset="./assets/desktop/img3ot_desktop.jpg 1x, ./assets/desktop/img3ot_desktop@2x.jpg 2x" media="(min-width:1200px)" />
+                <source srcset="./assets/tablet/img3ot_tablet.jpg 1x, ./assets/tablet/img3ot_tablet@2x.jpg 2x" media="(min-width:768px)" />
+                <source srcset="./assets/mobile/img3ot_mobile.jpg 1x, ./assets/mobile/img3ot_mobile@2x.jpg 2x" media="(max-width:767.98px)" />
+                <img src="./assets/mobile/img3ot_mobile.jpg" alt="Picture of Chris" />
+              </picture>
               <div class="our-team__member">
                 <h4 class="our-team__member-name">Ryan Harris</h4>
                 <p class="our-team__member-skill">Marketing</p>
@@ -203,7 +283,12 @@
               </div>
             </li>
             <li class="our-team__item">
-              <img src="./assets/img4ot.jpg" alt="Picture of Tyler" width="270" height="260">
+              <picture>
+                <source srcset="./assets/desktop/img4ot_desktop.jpg 1x, ./assets/desktop/img4ot_desktop@2x.jpg 2x" media="(min-width:1200px)" />
+                <source srcset="./assets/tablet/img4ot_tablet.jpg 1x, ./assets/tablet/img4ot_tablet@2x.jpg 2x" media="(min-width:768px)" />
+                <source srcset="./assets/mobile/img4ot_mobile.jpg 1x, ./assets/mobile/img4ot_mobile@2x.jpg 2x" media="(max-width:767.98px)" />
+                <img src="./assets/mobile/img4ot_mobile.jpg" alt="Picture of Chris" />
+              </picture>
               <div class="our-team__member">
                 <h4 class="our-team__member-name">Tyler Moore</h4>
                 <p class="our-team__member-skill">UI Designer</p>
@@ -232,13 +317,13 @@
               </div>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
       <!-- Regular Customers section -->
-      <div class="container">
-        <section class="regular-customers">
+      <section class="regular-customers">
+        <div class="container container--regular-customers">
           <h2 class="regular-customers__title">Regular Customers</h2>
-          <ul class="list regular-customers__list">
+          <ul class="regular-customers__list list">
             <li class="regular-customers__item">
               <svg class="regular-customers__item-logo">
                 <use href="./assets/symbol-defs.svg#icon-regular-customer1"></use>
@@ -270,17 +355,18 @@
               </svg>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
+
     <!-- Footer section -->
-    <div class="container">
-      <footer class="footer">
+    <footer class="footer">
+      <div class="container container--footer">
         <div class="footer__contacts">
           <a href="index.html" class="link logo-section logo-section--footer">Web<span class="logo-section--footer-studio">Studio</span></a>
           <address class="footer__contacts-info">
             <p class="footer__address">695 Park Ave, NY 10065, USA</p>
-            <a href="mailto:info@devstudio.com" class="link footer__mail">info@devstudio.com<br></a>
+            <a href="mailto:info@devstudio.com" class="link footer__mail">info@devstudio.com<br /></a>
             <a href="tel:+12127724150" class="link footer__phone-number">+1 212-772-4150</a>
           </address>
         </div>
@@ -307,13 +393,13 @@
                 <use href="./assets/symbol-defs.svg#icon-linkedin"></use>
               </svg>
             </a>
-         </div>
+          </div>
         </div>
         <div class="footer__subscribe-section">
           <form name="subscribe" autocomplete="on" novalidate class="subscribe-form">
             <label class="subscribe-form__label">
               <span class="subscribe-form__title">Subscribe to the newsletter</span>
-              <input type="email" name="email" class="subscribe-form__input" placeholder="E-mail"/>
+              <input type="email" name="email" class="subscribe-form__input" placeholder="E-mail" />
             </label>
             <button type="submit" class="subscribe-form__button">
               Subscribe
@@ -323,8 +409,9 @@
             </button>
           </form>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
+
     <!-- Modal section - Request our service -->
     <div class="modal is-hidden" data-modal>
       <div class="modal-content">
@@ -333,21 +420,21 @@
           <p class="modal-content__form-title">Leave your information and we'll call you back</p>
           <label class="modal-content__form-label">
             <span class="modal-content__form-label-name">Name</span>
-            <input class="modal-content__form-label-input" type="text" name="name" required>
+            <input class="modal-content__form-label-input" type="text" name="name" required />
             <svg class="modal-content__form-label-icon">
               <use href="./assets/icons.svg#icon-name-icon"></use>
             </svg>
           </label>
           <label class="modal-content__form-label">
             <span class="modal-content__form-label-name">Telephone</span>
-            <input class="modal-content__form-label-input modal-content__form-label-input--hide-arrows" type="number" name="phone" required>
+            <input class="modal-content__form-label-input modal-content__form-label-input--hide-arrows" type="number" name="phone" required />
             <svg class="modal-content__form-label-icon">
               <use href="./assets/icons.svg#icon-phone-icon"></use>
             </svg>
           </label>
           <label class="modal-content__form-label">
             <span class="modal-content__form-label-name">E-mail</span>
-            <input class="modal-content__form-label-input" type="email" name="email" required>
+            <input class="modal-content__form-label-input" type="email" name="email" required />
             <svg class="modal-content__form-label-icon">
               <use href="./assets/icons.svg#icon-email-icon"></use>
             </svg>
@@ -357,8 +444,10 @@
             <textarea name="feedback" placeholder="Enter the text" class="modal-content__form-label-textarea"></textarea>
           </label>
           <label class="modal-content__form-label modal-content__form-label--agreement">
-            <input class="modal-content__form-label-checkbox-input" type="checkbox" name="checkbox" required>
-            <span class="modal-content__form-label-name-checkbox">I agree with the letter and accept the <a href="" target="_blank" class="link modal-content__checkbox-link">Terms and Conditions</a></span>
+            <input class="modal-content__form-label-checkbox-input" type="checkbox" name="checkbox" required />
+            <span class="modal-content__form-label-name-checkbox"
+              >I agree with the letter and accept the <a href="" target="_blank" class="link modal-content__checkbox-link">Terms and Conditions</a></span
+            >
             <i class="modal-content__form-checkbox-icon modal-content__form-checkbox-icon--unchecked">
               <svg class="modal-content__checkbox-icon">
                 <use href="./assets/icons.svg#icon-unchecked"></use>
@@ -374,6 +463,8 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js" type="text/javascript"></script>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -1,17 +1,18 @@
-@import './utils/variables';
-@import './utils/buttons';
-@import './utils/base';
-@import './components/header-section';
-@import './components/top-banner';
-@import './components/about-us';
-@import './components/what-we-do';
-@import './components/our-team';
-@import './components/regular-customer';
-@import './components/footer-section';
-@import './components/social-media';
-@import './components/portfolio';
-@import './components/modal';
-@import './components/logo';
+@import "./utils/variables";
+@import "./utils/base";
+@import "./utils/buttons";
+@import "./sections/header-section";
+@import "./sections/top-banner";
+@import "./sections/about-us";
+@import "./sections/what-we-do";
+@import "./sections/our-team";
+@import "./sections/regular-customer";
+@import "./sections/footer-section";
+@import "./sections/portfolio";
+@import "./components/social-media";
+@import "./components/modal";
+@import "./components/logo";
+@import "./components/mobile-menu";
 
 .header,
 .about-us,
