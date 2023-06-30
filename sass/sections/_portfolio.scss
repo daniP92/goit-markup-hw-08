@@ -58,6 +58,9 @@
     display: flex;
     flex-direction: column;
     height: 110px;
+    @media screen and (max-width: 363px) {
+      height: 100%;
+    }
     padding: 20px 0 20px 24px;
     &-title {
       font-style: normal;
@@ -105,4 +108,8 @@
       top: 100%;
     }
   }
+}
+
+.portfolio__content-hover img {
+  width: 100%;
 }
