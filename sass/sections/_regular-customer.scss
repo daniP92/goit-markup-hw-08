@@ -32,10 +32,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 210px;
     height: 92px;
     border: 1px solid var(--grayish-light);
     border-radius: 4px;
+    @media screen and (max-width: $mobile-maxpoint) {
+      flex-basis: calc(100% / 2 - 15px);
+      width: 100%;
+    }
     @media screen and (min-width: $tablet-breakpoint) and (max-width: $tablet-maxpoint) {
       width: 226px;
     }

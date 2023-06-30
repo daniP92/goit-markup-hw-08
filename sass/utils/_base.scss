@@ -29,8 +29,7 @@ h5 {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  // border: 2px solid black;
-  @media screen and (max-width: $mobile-maxpoint) {
+  @media screen and (min-width: $mobile-breakpoint) {
     width: 480px;
   }
   @media screen and (min-width: $tablet-breakpoint) and (max-width: $tablet-maxpoint) {
@@ -54,4 +53,6 @@ h5 {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
