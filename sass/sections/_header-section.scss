@@ -130,7 +130,6 @@
     }
   }
 
-  .nav-list .link:hover::after,
   .nav-list .link--current-page::after {
     position: absolute;
     content: "";
