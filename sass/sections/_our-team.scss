@@ -30,7 +30,6 @@
     padding: 0;
     @media screen and (min-width: $tablet-breakpoint) {
       flex-direction: row;
-      flex-wrap: wrap;
     }
   }
   &__item {
